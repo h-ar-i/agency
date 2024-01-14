@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+}
+
+img,
+video,
+picture,
+svg {
+    max-width: 100%;
+    display: block;
+}
+
+:root {
+    --light-black: #0C0C0C;
+    --white: #FBFBFB
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    background-color: var(--light-black);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.page-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-inline: auto;
+    gap: 25%;
+    padding-block: 7px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+h3.company-name {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+}
+
+.nav-bar-items {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+}
+
+.nav-bar-items .nav-bar-item {
+    color: var(--white);
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    transition: color 0.5s ease-out;
+}
+
+.nav-bar-items .nav-bar-item:hover {
+    color: #ffffff;
+}
+
+a.get-in-touch-button {
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 23px;
+    background: var(--white);
+    color: var(--Light-Black, rgba(12, 12, 12, 0.90));
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.54px;
+
+}
+
+.page-body {
+    padding-top: 6.125rem;
+    display: grid;
+    row-gap: 5rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.page-body img.ornament {
+    margin-top: 2rem;
+}
+
+.page-body .page-content h2 {
+    color: var(--white);
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 1.5rem;
+    max-width: 16ch;
+}
+
+.page-body .page-content h2 span {
+    color: #64CCC5;
+}
+
+.page-body .page-content p {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.54px;
+    max-width: 48ch;
+    text-wrap: balance;
+}
+
+.page-body .page-info-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.page-body .image-container {
+    display: grid;
+    place-items: center;
+    overflow: visible;
+    max-width:18rem ;
+    max-height: 18rem;
+
+}
+
+.page-body .image-container .dummy-image {
+    margin-top: 3rem;
+    border-radius: 50%;
+    padding: 3rem;
+    animation: glow 2s infinite;
+}
+
+
+.page-body .page-info-grid button,
+.page-body .page-info-grid button:hover,
+.page-body .page-info-grid button:focus {
+    max-width: max-content;
+    display: flex;
+    gap: 10px;
+    color: rgba(12, 12, 12, 0.90);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px 20px 10px 10px;
+    border-radius: 23px;
+    background-color: #FFF;
+    border: none;
+    outline: none;
+}
+
+.brands-section {
+
+    display: grid;
+    gap: 5px;
+    margin-inline-start: 2vw;
+    margin-inline-start: 2dvw;
+    margin-inline-start: 2svw;
+    max-width: 100%;
+    width: 100%;
+
+}
+
+.brands-section h6 {
+    color: #64CCC5;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-inline-start: 1.5rem;
+}
+/* logo */
+.brands-section article.brand-logos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.325rem;
+    /* width: 100%; */
+
+}
+
+footer {
+    min-height: 2rem;
+    width: 100%;
+}
+
+@keyframes glow {
+    from {
+
+        border: 1px solid transparent;
+        transition: all 0.5s ease-in-out;
+
+    }
+
+    to {
+        border: 3px solid gray;
+        outline: 3px solid lightgray;
+        outline-offset: 3rem;
+
+    }
+
+}
+
+.one {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding-top: 1.5rem;
+
+}
+
+.two {
+    margin-bottom: 1.5rem;
+    margin-top: 5rem;
+}
+
+.two>.row>* {
+    padding: 30px;
+}
+
+
+
+.grid-container{
+    display: grid;
+    place-content: center;
+    padding-inline: 2rem;
+}
+
+.grid-container h5{
+    color: aqua;
+}
+
+
+
+
+@media only screen and (max-width: 1200px) {
+   .image-container .dummy-image{
+    display: none;
+   }
+  }
